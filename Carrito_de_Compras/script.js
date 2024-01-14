@@ -31,5 +31,25 @@ window.onscroll = ()=>{
     navbar.classList.remove("active")
 }
 
-
 // fin de la barra de busqueda
+
+// swiper para el slider 
+const swiper = new Swiper(".productos-slider", {
+    loop: true,
+    spaceBetween: 20,
+    autplay: {
+        delay:7500,
+        disableOnInteraction:false
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1020: {
+        slidesPerView: 3,
+      },
+    },
+  });
