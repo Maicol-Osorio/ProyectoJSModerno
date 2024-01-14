@@ -3,7 +3,7 @@
 
 :root{
     --rosa: #E6A3A3;
-    --Grisperla: #E1E1E1;
+    --Grisperla: #333;
     --sombras: 0 .5rem 1rem rgba(0, 0, 0, 0.502);
     --border: 2rem solid rgba(0, 0, 0, .1);
     --outline: 1rem solid rgba(0, 0, 0, .1);
@@ -34,6 +34,10 @@ body{
     background: #ddd;
 }
 
+section{
+    padding: 2rem 9%;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -46,7 +50,7 @@ body{
 }
 
 .btn:hover{
-    background: var(--rosa);
+    background: #ca4c4c;
     color: #fff;
 }
 
@@ -187,6 +191,70 @@ body{
 }
 
 
+/* inicio de la sesion de inicio  */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/fondoHome1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 0 0px 10px #000,
+                 0 0 10px #000,
+                 0 0 11px #000,
+                 0 0 12px #000,
+                 0 0 13px #000,
+                 0 0 14px #000
+}
+
+.home .content h3 span{
+    color: #ca4c4c;
+    text-decoration: underline;   
+    text-shadow: 0 0px 10px #000,
+                 0 0 10px #000,
+                 0 0 11px #000,
+                 0 0 12px #000,
+                 0 0 13px #000,
+                 0 0 14px #000   
+}
+
+.home .content p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    line-height: 1.9rem;
+    text-shadow: 0 0px 10px #000,
+                 0 0 10px #000,
+                 0 0 11px #000,
+                 0 0 12px #000,
+                 0 0 13px #000,
+                 0 0 14px #000,
+                 0 0 15px #000000;
+    letter-spacing: 2px;
+}
+.home .content a{
+    border: .3rem solid #fff;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 25px black;
+    font-weight: bolder;
+    backdrop-filter: blur(50px);
+}
+/* fin de la sesion de inicio */
+
 
 
 
@@ -291,6 +359,10 @@ body{
     }
 
     .header{
+        padding: 2rem;
+    }
+
+    section{
         padding: 2rem;
     }
 }
