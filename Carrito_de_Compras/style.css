@@ -359,7 +359,43 @@ section{
     padding: .5rem 0;
 }
 
+.categorias .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
 
+.categorias .box-container .box{
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--sombras);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+
+.categorias .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.categorias .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+.categorias .box-container .box h3{
+    font-size: 2rem;
+    color: black;
+    line-height: 1.8rem;
+}
+
+.categorias .box-container .box p{
+    font-size: 1.7rem;
+    color: var(--Grisperla);
+    padding: 1rem 0;
+}
 
 
 
