@@ -70,6 +70,9 @@ section{
     color: #fff;
 }
 
+.btnBorrar {
+    color: #ca4c4c;
+}
 .header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -205,6 +208,99 @@ section{
     color: var(--rosa);
     text-decoration: underline;
 }
+
+.header .shopping-cart{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 50rem;
+    max-height: 30rem;
+    background: #fff;
+    box-shadow: var(--sombras);
+    padding: 0rem 3rem;
+    text-align: center;
+    border-radius: .5rem;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    transition: all .5s linear;
+}
+
+.header .shopping-cart.active{
+    right: 2rem
+}
+
+
+.header .shopping-cart table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-weight: bolder;
+}
+
+.header .shopping-cart table thead{
+    width: 100%;
+    box-shadow: var(--sombras);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0; right: 0;left: 0;
+    z-index: 1;
+    background: var(--rosa);
+}
+
+.header .shopping-cart table thead tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.header .shopping-cart table tbody{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.header .shopping-cart table tbody tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: .1rem solid black;
+}
+
+
+.header .shopping-cart table tbody tr td{
+    
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.header .shopping-cart table tbody tr td:nth-child(3),
+.header .shopping-cart table tbody tr td:nth-child(4){
+    padding-left: 3.5rem;
+}
+
+.header .shopping-cart table tbody tr td img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5rem;
+}
+
+.header .shopping-cart table tbody tr td:last-child{
+    width: 1.5rem;
+}
+
+
+
+
+
 
 
 /* inicio de la sesion de inicio  */
@@ -397,7 +493,22 @@ section{
     padding: 1rem 0;
 }
 
-
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background: #fff;
+    border-top: 2px solid var(--border);
+    padding: 2rem 5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    color: #fff;
+    background: var(--rosa);
+    font-weight: 700;
+}
 
 
 
