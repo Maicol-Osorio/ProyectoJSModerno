@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>simulador de envio de email</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinner.css">
+
 </head>
 <body>
     <section>
@@ -45,39 +47,42 @@
                 <h2>comunicate con nosotros</h2>
                 <form action="" class="form-box">
                     <div class="input-box w50">
-                        <input type="text" name="" id="">
+                        <input type="text" name="nombre" id="nombre">
                         <span>nombre</span>
                     </div>
 
                     <div class="input-box w50">
-                        <input type="text" name="" id="">
+                        <input type="text" name="apellido" id="apellido">
                         <span>apellido</span>
                     </div>
 
                     <div class="input-box w50">
-                        <input type="text" name="" id="">
+                        <input type="email" name="email" id="email">
                         <span>email</span>
                     </div>
 
                     <div class="input-box w50">
-                        <input type="text" name="" id="">
+                        <input type="tel" name="telefono" id="telefono">
                         <span>telefono</span>
                     </div>
 
                     <div class="input-box w100">
-                        <textarea name="" id=""></textarea>
+                        <textarea name="mensaje" id="mensaje"></textarea>
                         <span>escribe tu mensaje</span>
                     </div>
 
                     <div class="btn-box">
-                        <input type="submit" value="enviar" class="btn">
-
-                        <input type="reset" value="reset" class="btn" disabled>
+                        <input type="submit" value="enviar" class="btn opacidad" disabled >
+                        <input type="reset" value="reset" class="btn opacidad" disabled>
 
                     </div>
+                    <span class="loader"></span>
                 </form>
+
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
