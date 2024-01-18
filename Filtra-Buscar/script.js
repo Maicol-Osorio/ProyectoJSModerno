@@ -7,7 +7,7 @@ btnMenu.addEventListener("click", ()=>{
 })
 
 // eliminar con el scroll 
-window.addEventListener("scrolled", ()=>{
+window.addEventListener("scroll", ()=>{
     btnMenu.classList.remove("fa-xmark")
     navbar.classList.remove("active")
 })

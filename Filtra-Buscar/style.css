@@ -24,6 +24,26 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #fff;
+    background: var(--gris);
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    background: var(--azul);
+    color: var(--dorado);
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -66,8 +86,55 @@ html{
     display: none;
 }
 
+#inicio{
+    padding-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.inicio .imagen{
+    flex: 1 1 40rem;
+}
 
+.inicio .imagen img{
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+    filter: drop-shadow(10px 10px 50px blue);
+}
+
+.inicio .content{
+    flex: 1 1 42rem
+}
+
+.inicio .content h3{
+    color: var(--azul);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.inicio .content p{
+    color: var(--gris);
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    padding: .5rem 0;
+}
+
+.inicio .content p span{
+    color: var(--dorado);
+    font-weight: bolder;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 2px blue;
+}
+
+.inicio .content a.btn{
+    position: absolute;
+    right: 35rem
+}
 
 
 
@@ -246,11 +313,29 @@ html{
     margin: 2.5rem 2rem;
     display: block;
    }
+
+   section{
+        padding: 2rem;
+   }
+
+   .content{
+    text-align: center;
+   }
+
+   .inicio .content a.btn{
+    position: absolute;
+    right: 36rem
+}
 }
 
 
 @media (max-width:450px) {
     html{
         font-size: 50%;
+    }
+
+    .inicio .content a.btn{
+        position: absolute;
+        right: 24rem
     }
 }
