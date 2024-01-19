@@ -17,7 +17,7 @@
 
         <nav class="navbar">
             <a href="#inicio" class="inicio">inicio</a>
-            <a href="#" class="servicios">servicios</a>
+            <a href="#productos" class="productos">productos</a>
             <a href="#" class="hacerca">hacerca</a>
             <a href="#" class="ofertas">ofertas</a>
             <a href="#" class="resenas">reseñas</a>
@@ -41,6 +41,102 @@
         </div>
     </section>
     <!-- terminando la sesion de inicio  -->
+
+    <!-- iniciando la sesion de servicios  -->
+    <section class="productos" id="productos">
+        <h1 class="heading"><span>productos</span></h1>
+
+        <div class="filtrar">
+            
+            <select id="TipoVehiculo" name="TipoVehiculo">
+                <option value="" selected >-Tipo Vehiculo-</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Camioneta">Camioneta</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Deportivo">Deportivo</option>
+            </select>
+
+            
+            <select id="Marca" name="Marca">
+                <option value="" selected >-Marca-</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Jeep">Jeep</option>
+                <option value="MINI">MINI</option>
+                <option value="Porsche">Porsche</option>
+                <img src="img/ToyotaRav4Azul.jpg" alt="">
+            </select>
+
+          
+            <select id="Color" name="Color">
+                <option value="" selected >-Color-</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Plateado">Plateado</option>
+                <option value="Azul">Azul</option>
+                <option value="Blanco">Blanco</option>
+                <option value="Negro">Negro</option>
+                <option value="Amarillo">Amarillo</option>
+                <option value="Gris">Gris</option>
+                <option value="Verde">Verde</option>
+            </select>
+
+           
+            <select id="Transmision" name="Transmision">
+                <option value="" selected >-Transmision-</option>
+                <option value="Automática">Automática</option>
+                <option value="Manual">Manual</option>
+            </select>
+
+        
+            <select id="Traccion" name="Traccion">
+                <option value="" selected >-Traccion-</option>
+                <option value="Delantera">Delantera</option>
+                <option value="Total">Total</option>
+                <option value="Trasera">Trasera</option>
+            </select>
+
+           
+            <select id="TipoCombustible" name="TipoCombustible">
+                <option value="" selected>-Tipo Combustible-</option>
+                <option value="Gasolina">Gasolina</option>
+                <option value="Electrico">Electrico</option>
+            </select>
+
+         
+            <select id="CapacidadPasajeros" name="CapacidadPasajeros">
+                <option value="" selected >-Capacidad Pasajeros-</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            
+            </select>
+
+           
+            <select id="precioMax" name="precioMax">
+                <option value="">-precio maximo</option>
+            </select>
+
+
+
+
+        </div>
+        </form>
+
+        <div class="box-container">
+            
+        </div>
+    </section>
+    <!-- terminando la sesion de servicios -->
 
 
 
@@ -75,6 +171,7 @@
 
 
     <!-- archivos javascript  -->
+    <script src="db.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
