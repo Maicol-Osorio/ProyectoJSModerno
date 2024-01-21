@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito de compras javascript</title>
+    <!-- iconos de font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- archivos css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper para el slider  -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <!-- inicio de la secion del header  -->
+    <header class="header">
+        <a href="#" class="logo"> <i class="fa-solid fa-gem"></i> NatureGlow</a>
+
+        <nav class="navbar">
+            <a href="#inicio">inicio</a>
+            <a href="#destacados">destacados</a>
+            <a href="#productos">productos</a>
+            <a href="#categorias">categorias</a>
+
+        </nav>
+
+        <div class="iconos">
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+            <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="card-btn"></div>
+            <div class="fa-solid fa-user" id="user-btn"></div>
+        </div>
+
+
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="busca aqui...">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+
+        <form action="" class="login-form">
+            <h3>inicia sesión</h3>
+            <input type="email" class="box" placeholder="ingresa tu correo">
+            <input type="password" class="box" placeholder="ingresa tu password">
+            <p>¿olvidaste tu password? <a href="#">recuperalo</a></p>
+            <p>¿aun no tienes cuenta? <a href="#">registrate</a></p>
+            <input type="submit" value="inicia sesion" class="btn">
+        </form>
+
+        <div class="shopping-cart">
+            <table >
+                <thead>
+                    <tr>
+                        <th>imagen</th>
+                        <th>nombre</th>
+                        <th>precio</th>
+                        <th>cantidad</th>
+                        <th></th>
+                    </tr>
+    
+                <tbody>
+
+                </tbody>
+                    
+                </thead>
+            </table>
+
+            <a href="#" class="btn vaciarCarrito">vaciar carrito</a>
+        </div>
+
+    </header>
+    <!-- fin de la secion de header  -->
+
+    <!-- inicio de la sesion de inicio  -->
+    <sectiom class="home" id="inicio">
+        <div class="content">
+            <h3>Descubre tu <span>Esencia</span> Natural Aquí</h3>
+            <p>Descubre la auténtica belleza en nuestra colección exclusiva. Cada producto resalta la magia natural para una experiencia única. ¡Celebra tu singularidad con nosotros!</p>
+            <a href="#productos" class="btn">Compra ahora</a>
+        </div>
+    </sectiom>
+    <!-- fin de la sesion de inicio  -->
+
+    <!-- inicio de la sesion de destacados  -->
+    <section class="destacados" id="destacados">
+        <h1 class="heading">productos <span>destacados</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/labial.jpg" alt="">
+                    <h3>Bálsamo Labial</h3>
+                    <p>Bálsamo labial hidratante: Suaviza y protege los labios, brindando hidratación duradera</p>
+                    <a href="" class="btn">leer mas</a>
+                </div>
+    
+                <div class="box">
+                    <img src="img/mascarilla-arcilla.jpg" alt="">
+                    <h3>Mascarilla de Arcilla</h3>
+                    <p>Mascarilla de arcilla: Purifica y revitaliza la piel, eliminando impurezas para un cutis radiante</p>
+                    <a href="" class="btn">leer mas</a>
+                </div>
+    
+    
+                <div class="box">
+                    <img src="img/locion-hidratante.jpg" alt="">
+                    <h3>Loción Corporal</h3>
+                    <p>Loción hidratante corporal: Nutre la piel con una fórmula ligera, dejándola suave y revitalizada</p>
+                    <a href="" class="btn">leer mas</a>
+                </div>
+
+                
+            </div>
+    </section>
+    <!-- fin de la sesion de destacados  -->
+
+    <!-- inicio de la sesion de productos  -->
+    <section class="produtos" id="productos">
+        <h1 class="heading"> <span>productos</span></h1>
+        <div class="swiper productos-slider">
+            <div class="swiper-wrapper">
+                <div class="box swiper-slide">
+                    <img src="img/kitBarba.jpg" alt="">
+                    <h3>Kit aseo para barba</h3>
+                    <div class="precio">300</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="1">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/rasuradora.jpg" alt="">
+                    <h3>Rasuradoras eléctricas</h3>
+                    <div class="precio">129</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="2">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/labiales.jpg" alt="">
+                    <h3>labiales</h3>
+                    <div class="precio">6</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="3">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/cepillosCabello.jpg" alt="">
+                    <h3>cepillo de cabello</h3>
+                    <div class="precio">4</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="4">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/velas.jpg" alt="">
+                    <h3>Velas aromáticas</h3>
+                    <div class="precio">10</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="5">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/tinte.jpg" alt="">
+                    <h3>Tinte para cejas</h3>
+                    <div class="precio">11</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="6">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/bloquedores.jpg" alt="">
+                    <h3>bloqueador solar</h3>
+                    <div class="precio">7</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="7">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/aretes.jpg" alt="">
+                    <h3>Aretes</h3>
+                    <div class="precio">3</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="8">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/brochas.jpg" alt="">
+                    <h3>Brocha para base</h3>
+                    <div class="precio">11</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="9">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/espejo.jpg" alt="">
+                    <h3>Espejo compacto</h3>
+                    <div class="precio">7</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="10">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/rizador.jpg" alt="">
+                    <h3>Rizador de pestañas</h3>
+                    <div class="precio">6</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="11">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/delineador.jpg" alt="">
+                    <h3>Lápiz delineador de ojos</h3>
+                    <div class="precio">5</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="12">agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper productos-slider">
+            <div class="swiper-wrapper">
+                <div class="box swiper-slide">
+                    <img src="img/mascarilla-arcilla.jpg" alt="">
+                    <h3>Mascarilla de Arcilla</h3>
+                    <div class="precio">5</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="13">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/aguaMicelar.jpg" alt="">
+                    <h3>Agua micelar</h3>
+                    <div class="precio">5</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="14">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/sombraOjos.jpg" alt="">
+                    <h3>Sombras de ojos</h3>
+                    <div class="precio">8</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="15">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/Champu.jpg" alt="">
+                    <h3>Champús</h3>
+                    <div class="precio">9</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="16">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/esmalte.jpg" alt="">
+                    <h3>Esmaltes de uñas</h3>
+                    <div class="precio">5</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="17">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/lentes.jpg" alt="">
+                    <h3>lentes de contacto</h3>
+                    <div class="precio">150</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="18">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/serum.jpg" alt="">
+                    <h3>Sérum antiarrugas</h3>
+                    <div class="precio">14</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="19">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/labial.jpg" alt="">
+                    <h3>Bálsamo Labial</h3>
+                    <div class="precio">4</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="20">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/plancha.jpg" alt="">
+                    <h3>Secadores de pelo</h3>
+                    <div class="precio">150</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="21">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/Perfumes.jpg" alt="">
+                    <h3>Perfumes</h3>
+                    <div class="precio">40</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="22">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/cremaManos.jpg" alt="">
+                    <h3>Cremas de manos</h3>
+                    <div class="precio">10</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="23">agregar al carrito</a>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="img/locion-hidratante.jpg" alt="">
+                    <h3>Loción Corporal</h3>
+                    <div class="precio">14</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <a href="" class="btn" data-id="24">agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin de la sesion de produtos  -->
+
+    <!-- inicio de la sesion de categorias  -->
+    <section class="categorias" id="categorias">
+        <h1 class="heading"><span>categorias</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/electricos.jpg" alt="">
+                <h3>electricos</h3>
+                <p>herramientas innovadoras para una rutina de cuidado personal efectiva y conveniente en casa</p>
+                <a href="#" class="btn">comprar</a>
+            </div>
+
+            <div class="box">
+                <img src="img/caseros.jpg" alt="">
+                <h3>caseros</h3>
+                <p>productos de belleza caseros, diseñados para realzar tu rutina de cuidado personal de manera natural y efectiva</p>
+                <a href="#" class="btn">comprar</a>
+            </div>
+
+            <div class="box">
+                <img src="img/belleza.jpg" alt="">
+                <h3>belleza</h3>
+                <p>Explora nuestra gama de productos de belleza, diseñados para realzar tu rutina con calidad y estilo</p>
+                <a href="#" class="btn">comprar</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- fin de la sesion de categorias  -->
+
+    <!-- inicio de la sesion del footer  -->
+    <footer class="footer">
+        <p>copyright</p>
+        <p>#curso javascript</p>
+    </footer>
+    <!-- fin de la sesion de footer  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- archivos javascript -->
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
