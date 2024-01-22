@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoCoverJS</title>
+    <!-- iconos de font awesmoe  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- estilos css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spiner.css">
+
+</head>
+<body>
+    <!-- inicio de la sesion de header  -->
+    <header class="header">
+        <a href="#" class="logo">ProtoCoverJS <i class="fa-solid fa-credit-card"></i></a>
+        <nav class="navbar">
+            <a href="#">inicio</a>
+            <a href="#">servicios</a>
+            <a href="#">blogs</a>
+            <a href="#">contact</a>
+        </nav>
+        <i class="fa-solid fa-bars menu-btn"></i>
+    </header>
+    <!-- fin de la sesion de header  -->
+
+    <!-- inicio de la sesion de home  -->
+    <section class="home">
+        <div class="content">
+
+            <h3>Cotiza Tu Seguro de Auto</h3>
+            <form action="" class="formSeguros">
+                <label for="marca">marca</label>
+                <select name="marca" id="marca">
+                    <option value="" selected disabled>-selecione-</option>
+                    <option value="1">americano</option>
+                    <option value="2">asiatico</option>
+                    <option value="3">europeo</option>
+                </select>
+    
+                <label for="modelo">modelo</label>
+                <select name="modelo" id="modelo">
+                    <option value="">-selecione-</option>
+                </select>
+    
+                <div class="tipoSeguro">
+                    <h4>tipo seguro</h4>
+                    
+                    <div class="opciones">
+                        <label>
+                            <input type="radio" name="seleccion" value="completo"> Completo
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="seleccion" value="basico"> Básico
+                        </label>
+                    </div>
+                </div>
+
+                <input type="submit" value="cotizar seguro" class="btn">
+
+
+            </form>
+        </div>
+
+        <!-- <div class="seguro">
+            <h3>Detalles y Tarifas de tu Seguro</h3>
+            <div class="resultado">
+                <h4>resumen de seguro</h4>
+                <p><span>marca:</span>europeo</p>
+                <p><span>modelo:</span>2024</p>
+                <p><span>tipo:</span>completo</p>
+                <p><span>total:</span>452221</p>
+            </div>
+        </div> -->
+
+        <span class="loader"></span>
+    </section>
+    <!-- fin de la sesion de home  -->
+
+    <script src="script.js"></script>
+</body>
+</html>

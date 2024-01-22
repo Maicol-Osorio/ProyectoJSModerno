@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none; outline: none;
+    transition: all .5s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: #D3D3D3;
+    text-transform: capitalize;
+}
+
+.btn{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right,#228B22, #0db30d );
+    color: #fff;
+    box-shadow: 0 0 10px black;
+}
+
+.msj{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 1rem;
+    padding: .7rem;
+    font-size: 2rem;
+    background: rgba(255, 0, 0, 0.699);
+    border-radius: 1rem;
+    border-bottom: .5rem solid rgb(128, 1, 1);
+}
+
+.header{
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px black;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #228B22;
+}
+
+.header .logo:hover i{
+    text-shadow: 0 0 10px rgb(0, 225, 255),
+                 1px 1px 10px rgb(0, 225, 255)
+}
+
+.header .navbar a{
+    padding: 1rem 1.5rem;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #228B22;
+    border-radius: 1rem;
+}
+
+.header .navbar a:hover{
+    font-weight: bolder;
+    transition: all .5s linear;
+    background: #228b22d7;
+    color: #fff;
+}
+
+.header .menu-btn{
+    color: #228B22;
+    font-size: 3rem;
+    display: none;
+}
+
+.home{
+    padding: 2rem 9%;
+    height: calc(100vh - 7rem);
+    display: flex;
+}
+
+.home .content{
+    position: relative;
+    flex: 1 1 40rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 2rem;
+    max-width: 55rem;
+}
+
+h3{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 10px #228B22,
+                 0 1px 10px #228B22,
+                 0 2px 10px #228B22;
+    margin-bottom: 2rem;
+}
+
+.home .content .formSeguros{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+label{
+    color: #228B22;
+    font-weight: bolder;
+    text-align: start;
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-decoration: underline;
+}
+
+.home .content .formSeguros select{
+    font-size: 2rem;
+    padding: 1rem;
+    background: #228b223d;
+    margin-bottom: 1rem;
+}
+
+.home .content .formSeguros h4{
+    font-size: 2rem;
+    padding: 2rem;
+    color: #228B22;
+    text-shadow: 0 0 10px #228B22;
+    width: 100%;
+}
+.home .content .formSeguros .tipoSeguro{
+    font-weight: bolder;
+    padding: 2rem;
+}
+.home .content .formSeguros label{
+    padding: 1rem;
+    float: left;
+    flex-direction: row;
+}
+
+
+.opciones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home .seguro{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.home .seguro .resultado{
+    padding: 2rem;
+}
+
+.home .seguro .resultado h4{
+    background: #228B22;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: underline;
+    padding: 1rem 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.home .seguro .resultado p{
+    font-size: 1.7rem;
+    background: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: .1rem solid #228b2236;
+    
+}
+
+.home .seguro .resultado span{
+    color: #228B22;
+    font-weight: bolder;
+    text-decoration: underline;
+    padding: 0 2rem;
+    font-weight: bolder;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    .home{
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding: 2rem;
+        position: relative;
+    }
+
+    .header .navbar{
+        display: none;
+    }
+    .header .navbar.active{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        text-align: center;
+        background: #D3D3D3;
+        border-top: 1px solid #228B22;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .header .menu-btn{
+        display: block;
+        margin-right: 1rem;
+    }
+    
+    .header .menu-btn.active{
+        transform: rotate(180deg);
+        color: #00ff00;
+    }
+    .home{
+        flex-direction: column;
+    }
+
+}
