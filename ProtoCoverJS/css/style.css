@@ -38,6 +38,19 @@ html{
     border-bottom: .5rem solid rgb(128, 1, 1);
 }
 
+.exito{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 1rem;
+    padding: .7rem;
+    font-size: 2rem;
+    background: rgba(2, 252, 2, 0.699);
+    border-radius: 1rem;
+    border-bottom: .5rem solid rgb(1, 128, 7);
+}
+
+
 .header{
     padding: 2rem 9%;
     display: flex;
@@ -147,6 +160,7 @@ label{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 .home .seguro{
     flex: 1 1 40rem;

@@ -1,5 +1,5 @@
 .loader {
-    display: none;
+
     position: absolute;
     top: 50%;
     left: 75%;
@@ -31,4 +31,8 @@
     .loader{
         top: 85%; left: 40%;
     }
+}
+
+.visible{
+  display: none;
 }
