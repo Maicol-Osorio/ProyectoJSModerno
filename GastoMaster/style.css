@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s linear;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h3{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3rem;
+    color: #228B22;
+    text-shadow: 0 0 10px #228B22;
+}
+
+
+
+i{
+    color: #FFD700;
+    font-weight: bolder;
+    margin-right: 1rem;
+    text-shadow: 0 0 10px #fff,
+                 0 0 10px #fff;
+}
+
+.msj{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 1rem;
+    opacity: .7;
+    background: red;
+}
+
+.btn{
+    background: linear-gradient(to right, #228B22, #73ff00);
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.btn:hover{
+    box-shadow: 0 0 10px black;
+    border: 1px solid #FFD700;
+}
+
+.header{
+    padding: 2rem 9%;
+    background: #666;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+}
+
+.header .logo{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.home{
+    padding: 2.5rem 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content .datosForm{
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content .datosForm label{
+    color: #228B22;
+    font-weight: bolder;
+    text-align: start;
+    font-size: 1.8rem;
+}
+
+
+.home .content .datosForm input{
+    padding: 1.5rem 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home .gastos{
+    flex: 1 1 40rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px black;
+}
+
+.home .totales{
+    text-align: center;
+    padding: 1rem;
+}
+
+.home .totales p{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 1px solid #228B22;
+}
+
+.home .totales p span{
+    margin-left: 2rem;
+}
+
+.home .gastos .restante,
+.home .gastos .presupuesto{
+    font-size: 2.5rem;
+    padding: 1rem;
+    background: green;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.lista i{
+    color: rgb(146, 29, 29);
+    position: absolute;
+    right: 0;
+}
+
+.home .gastos{
+    margin-right: 1rem;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
