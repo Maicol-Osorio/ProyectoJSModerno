@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminCitas</title>
+    <!-- iconos de font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- estilos css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Gestión de Citas para Veterinarios <i class="fa-solid fa-shield-dog"></i></h1>
+    </header>
+
+    <section class="home">
+        <div class="formulario">
+            <h3>datos de paciente</h3>
+            <form action="">
+                <div>
+                    <label for="nombre">nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+
+                <div>
+                    <label for="propietario">propietario</label>
+                    <input type="text" name="propietario" id="propietario">
+                </div>
+
+                <div>
+                    <label for="telefono">telefono</label>
+                    <input type="text" name="telefono" id="telefono">
+                </div>
+
+                <div>
+                    <label for="fecha">fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+
+                <div>
+                    <label for="hora">hora ingreso</label>
+                    <input type="time" name="hora" id="hora">
+                </div>
+
+                <div>
+                    <label for="sintomas">sintomas</label>
+                    <textarea name="sintomas" id="sintomas"></textarea>
+                </div>
+
+                <input type="submit" value="crear cita" class="btn">
+            </form>
+        </div>
+
+        <div class="citasCreadas">
+            <h3>gestiona tus citas</h3>
+            
+
+            
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
