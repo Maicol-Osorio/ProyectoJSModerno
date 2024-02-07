@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+    --principal:#006691;
+    --secundario:#2499c7;
+    --complementario: #f36b39;
+    --compleClaro: #ff8d58;
+    --analogo: #3165f4;
+    --analogoClaro: #5177ff;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .5s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.btn{
+    border: 1px solid blue;
+    padding: 1rem;font-weight: bold;
+    border-radius:1rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.btn:hover{
+    background: var(--complementario);
+    color: #fff;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+section{
+    padding: 3rem 5%;
+}
+
+h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;font-weight: bolder;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    background: var(--principal);
+    width: 30rem;
+    height: 100%;
+    padding: 3rem;
+    text-align: center;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--complementario);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.header .logo i{
+    text-shadow: 0 0 10px #ff8d58,
+                 0 0 10px #ff8d58;
+    margin-right: 1rem;
+}
+
+.header .navbar{
+    padding: 20% 0;
+}
+
+.header .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #fff;
+    transition: all .5s linear;
+}
+
+.header .navbar a i{
+    color: #f36b39;
+    padding-right: .5rem;
+}
+
+.header .navbar a:hover{
+    transition: all .5 linear;
+    text-shadow: 0 0 10px #fff,
+                 0 0 10px #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1rem solid #fff;
+    border-right: 1rem solid #fff;
+}
+
+.header .share{
+    text-align: center;
+}
+
+.share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0 .3rem;
+}
+
+.share a:hover{
+    text-shadow: 0 0 10px black;
+    font-size: 3rem;
+}
+
+.header p{
+    text-align: center;
+    color: #fff;
+    padding-top: 10%;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+#menu-btn{
+    position: fixed;
+    top: 1rem; right: 3rem;
+    height: 5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+    background: var(--principal);
+    color: white;
+    cursor: pointer;
+    line-height: 5rem;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+#menu-btn.fa-x{
+    transition: all .5s linear;
+    transform: rotate(180deg);
+    color: var(--complementario);
+    z-index: 2000;
+}
+
+
+.header.active{
+    left: 0;
+    background: #006691e7
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.img{
+    flex: 1 1 40rem;
+}
+
+.img img{
+    width: 60%;
+    margin-left: 25rem;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.content{
+    width: 45rem;
+}
+
+
+form{
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+form div label{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+form div input{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* table{
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+    width: 100rem;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px black;
+}
+
+table thead{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.664);
+}
+
+table thead th{
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    align-items: center;
+    margin: 0 6rem;
+}
+
+table tbody{
+    width: 100%;
+    height: calc(100% - 3.5rem);
+    padding: 1rem;
+    padding-left: 5rem;
+}
+
+
+td{
+    border: 1px solid blue;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-right: 11rem;
+    display: inline-block;
+}
+
+td:last-child{
+    margin-right: none;
+}
+ */
+
+
+
+ /* Estilos para la tabla */
+ table {
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+     border-collapse: collapse;
+     width: 70%;
+     font-family: Arial, sans-serif;
+ }
+ 
+ /* Estilos para las celdas de encabezado (th) */
+ th {
+     background-color: #f2f2f2;
+     text-align: left;
+     padding: 10px;
+ }
+ 
+ /* Estilos para las celdas de datos (td) */
+ td {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 10px;
+ }
+ 
+ /* Estilos para las filas impares */
+ tr:nth-child(odd) {
+     background-color: #f9f9f9;
+ }
+ 
+ /* Estilos para los enlaces dentro de las celdas */
+ a {
+     text-decoration: none;
+     color: #0074d9;
+     margin-right: 10px;
+ }
+ 
+ /* Estilos para los enlaces de eliminar */
+ a[href="#eliminar"] {
+     color: #ff4136;
+ }
+ 
+ /* Estilos para los enlaces de editar */
+ a[href="#editar"] {
+     color: #2ecc40;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:800px) {
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header{
+        left: -120%;
+        width: 85rem;
+    }
+
+    .img{
+        flex: 1 1 40rem;
+    }
+
+    .img img{
+        width: 80%;
+        margin-left:5rem
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        width: 55rem;
+        left: -130%;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img{
+        margin-top: 2.5rem;
+    }
+
+    .img img{
+        width: 70%;
+        margin-left:5rem
+    }
+}
