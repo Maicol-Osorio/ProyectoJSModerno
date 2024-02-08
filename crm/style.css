@@ -25,6 +25,17 @@ html{
     scroll-behavior: smooth;
 }
 
+.msj{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+    font-weight: bolder;
+    margin: 1rem;
+    box-shadow: 0 0 10px black;
+    border-radius: 1rem;
+    background: #2ecc40;
+    color: #fff;
+}
 .btn{
     border: 1px solid blue;
     padding: 1rem;font-weight: bold;
