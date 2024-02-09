@@ -167,6 +167,12 @@
             btnEditar.style.background = "cornflowerblue"
             btnEditar.style.color = "white"
             btnEditar.value = "editar"
-            
         }
+
+        const btnMenu = document.querySelector("#menu-btn");
+        const header = document.querySelector(".header")
+        btnMenu.addEventListener("click", ()=>{
+            btnMenu.classList.toggle("fa-x")
+            header.classList.toggle("active")
+        })
 })()

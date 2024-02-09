@@ -309,6 +309,10 @@ form div input{
     html{
         font-size: 55%;
     }
+
+    table{
+        right: 1rem;
+    }
 }
 
 @media (max-width:800px) {
@@ -318,7 +322,7 @@ form div input{
 
     .header{
         left: -120%;
-        width: 85rem;
+        width: 100rem;
     }
 
     .img{
@@ -328,6 +332,11 @@ form div input{
     .img img{
         width: 80%;
         margin-left:5rem
+    }
+
+    table{
+        width: 95%;
+        top: 7rem;
     }
 }
 
@@ -354,4 +363,5 @@ form div input{
         width: 70%;
         margin-left:5rem
     }
+    
 }
