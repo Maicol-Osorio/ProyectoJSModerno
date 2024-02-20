@@ -16,9 +16,8 @@
         <a href="#" class="logo"><i class="fa-solid fa-earth-americas"></i>ClimApi</a>
         <nav class="navbar">
             <a href="#home">inicio</a>
-            <a href="#servicios">servicios</a>
             <a href="#clima">clima</a>
-            <a href="#homa">dotores</a>
+            <a href="#servicios">servicios</a>
             <a href="#homa">reseñas</a>
             <a href="#homa">blogs</a>
         </nav>
@@ -41,6 +40,39 @@
         </div>
     </section>
     <!-- fin de la sesion de home  -->
+
+
+    <!-- inicio de la sesion del formulario -->
+    <section class="clima" id="clima">
+        <h1 class="heading">Prueba el <span>Clima</span></h1>
+
+        <div class="contenido">
+            
+            <form action="">
+                <h3>Consulta el Clima por País y Ciudad</h3>
+                <select name="paises" id="paises">
+                    <option value="" disabled selected>Selecciona tu País</option>
+                    <option value="AR">Argentina</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="ES">España</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
+                </select>
+                
+                <input type="text" name="ciudades" id="ciudades">
+                
+                <input type="submit" value="Consultar Clima" class="btn">
+            </form>
+
+          <div class="resultados">
+
+          </div>
+            
+        </div>
+    </section>
+    <!-- fin de la sesion del formulario -->
 
     <!-- inicio de la sesin de servicios -->
     <section class="servicios" id="servicios">
@@ -92,67 +124,7 @@
     </section>
     <!-- fin de la sesion de servicios -->
 
-    <!-- inicio de la sesion del formulario -->
-    <section class="clima" id="clima">
-        <h1 class="heading">Prueba el <span>Clima</span></h1>
-
-        <div class="contenido">
-            
-            <form action="">
-                <h3>Consulta el Clima por País y Ciudad</h3>
-                <select name="paises" id="paises">
-                    <option value="" disabled selected>Selecciona tu País</option>
-                    <option value="COL">Colombia</option>
-                    <option value="USA">Estados Unidos</option>
-                    <option value="CAN">Canadá</option>
-                    <option value="MEX">México</option>
-                    <option value="ESP">España</option>
-                    <option value="FRA">Francia</option>
-                    <option value="GER">Alemania</option>
-                    <option value="ITA">Italia</option>
-                    <option value="UK">Reino Unido</option>
-                    <option value="BRA">Brasil</option>
-                    <option value="ARG">Argentina</option>
-                </select>
-                
-                <input type="text" name="ciudades" id="ciudades">
-                
-                <a href="" class="btn">Consultar Clima</a>
-            </form>
-            <div class="resultados">
-                <h3>Resultados de la Búsqueda de Clima</h3>
-
-                <div class="lugar">
-                    <p>País: <span>colombia</span></p>
-                    <p>Ciudad: <span>bogota</span></p>
-                </div>
-
-                <div class="temp">
-                    <div class="box">
-                        <i class="fa-solid fa-temperature-arrow-down"></i>
-                        <h4>Temperatura Mínima</h4>
-                        <p>15g</p>
-                    </div>
     
-    
-                    <div class="box">
-                        <i class="fa-solid fa-temperature-low"></i>
-                        <h4>Temperatura Actual</h4>
-                        <p>25g</p>
-                    </div>
-    
-                    <div class="box">
-                        <i class="fa-solid fa-temperature-arrow-up"></i>
-                        <h4>Temperatura Máxima</h4>
-                        <p>33g</p>
-                    </div>
-                </div>
-
-                <p> para la ciudad de París, en Francia, se presenta una temperatura máxima proyectada de 25°C y una mínima de 15°C, con la temperatura actual registrada en 20°C</p>
-                </div>
-        </div>
-    </section>
-    <!-- fin de la sesion del formulario -->
 
     <!-- inicio de la sesion del footer  -->
     <section class="footer">
