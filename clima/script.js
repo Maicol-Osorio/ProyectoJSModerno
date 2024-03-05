@@ -26,12 +26,12 @@ function validarForm(e){
     mostrarAlerta("buscando clima", "exito")
     setTimeout(()=>{
         consultarApi(ciudad, pais)
-    },2000)
+    },1500)
 }
 
 function consultarApi(ciudad, pais){
     const apiKey = "a07bac501ddc9fde01b67f202e638255";
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${apiKey}`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${apiKey}`;
     console.log(url)
     
     fetch(url)
